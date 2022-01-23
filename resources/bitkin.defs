@@ -1,0 +1,194 @@
+<svg>
+  <!-- TEMPLATE DEFINITIONS -->
+  <defs>
+    <symbol id="template-shadow">
+      <circle r="100%" fill="black" opacity="0.15" />
+    </symbol>
+    
+    <symbol id="template-body">
+      <circle class="body" pointer-events="visible" r="100%" fill="fb-orange" />
+    </symbol>
+    
+    <symbol id="template-blush">
+      <circle class="left-blush" cx="-75%" cy="0" r="18%" fill="fb-red" opacity="0.8" />
+      <circle class="right-blush" cx="75%" cy="0" r="18%" fill="fb-red" opacity="0.8" />
+    </symbol>
+    
+    <symbol id="template-face">
+      <!-- EYES -->
+      
+      <g id="animate-eyes-open">
+        <circle class="left-eye" cx="-70%" cy="-30%" r="10%" fill="black" />
+        <circle class="right-eye" cx="70%" cy="-30%" r="10%" fill="black" />
+        <circle class="left-eye-glare" cx="-74%" cy="-34%" r="3%" fill="white" />
+        <circle class="right-eye-glare" cx="67%" cy="-34%" r="3%" fill="white" />
+
+        <animateTransform attributeType="translate" from="0" to="-1000" begin="load+4" dur="0" repeatDur="4.1" repeatCount="indefinite" />
+        <animateTransform attributeType="translate" from="-1000" to="0" begin="load+4.1" dur="0" repeatDur="4.1" repeatCount="indefinite" />
+      </g>
+
+      <g id="animate-eyes-closed" transform="translate(-1000)">
+        <line class="left-eye-closed" x1="-80%" y1="-30%" x2="-60%" y2="-30%" fill="black" stroke-width="6%" />
+        <line class="right-eye-closed" x1="60%" y1="-30%" x2="80%" y2="-30%" fill="black" stroke-width="6%" />
+
+        <animateTransform attributeType="translate" from="-1000" to="0" begin="load+4" dur="0" repeatDur="4.1" repeatCount="indefinite" />
+        <animateTransform attributeType="translate" from="0" to="-1000" begin="load+4.1" dur="0" repeatDur="4.1" repeatCount="indefinite" />
+      </g>
+      
+      <!-- MOUTHS -->
+
+      <arc class="mouth mouth-smile" x="-13%" y="0" width="25%" height="20%" fill="black" arc-width="6%" start-angle="90" sweep-angle="180" />
+      
+      <svg class="mouth mouth-cat">
+        <arc class="mouth-left" x="-18%" y="0" width="20%" height="20%" fill="black" arc-width="6%" start-angle="90" sweep-angle="180" />
+        <arc class="mouth-right" x="-2%" y="0" width="20%" height="20%" fill="black" arc-width="6%" start-angle="90" sweep-angle="180" />
+      </svg>
+      
+      <g class="mouth mouth-open">
+        <circle cy="10%" r="10%" fill="black" />
+        <rect x="-10%" y="0" width="20%" height="10%" />
+      </g>
+      
+      <!-- HATS -->
+      
+      <svg class="hat hat-top-hat">
+        <g transform="translate(-60%,-170%)">
+          <g transform="rotate(350)">
+            <rect class="hat-primary" width="60%" height="70%" fill="black" />
+            <rect class="hat-primary" x="-20%" y="70%" width="100%" height="10%" fill="black" />
+          </g>
+        </g>
+      </svg>
+      
+      <svg class="hat hat-baseball-cap">
+        <g transform="scale(1,0.5)">
+          <circle class="hat-secondary" cy="-280%" r="8%" fill="darkgray" />
+          <circle class="hat-primary" cy="-200%" r="80%" fill="black" />
+          <rect class="hat-primary" x="-80%" y="-200%" width="160%" height="80%" fill="black" />
+          <rect class="hat-secondary" x="-80%" y="-140%" width="220%" height="20%" fill="darkgray" />
+        </g>
+      </svg>
+      
+      <svg class="hat hat-beanie">
+        <g transform="rotate(0)">
+          <circle class="hat-secondary" cy="-150%" r="15%" fill="lightgray" />
+        
+          <g transform="scale(1,0.5)">
+            <circle class="hat-primary" cy="-200%" r="80%" fill="black" />
+            <rect class="hat-primary" x="-80%" y="-200%" width="160%" height="80%" fill="black" />
+            <rect class="hat-secondary" x="-80%" y="-180%" width="160%" height="40%" fill="lightgray" />
+          </g>
+        </g>
+      </svg>
+      
+      <svg class="hat hat-headband">
+        <rect class="hat-primary" x="-90%" y="-70%" width="180%" height="20%" fill="black" />
+        <rect class="hat-secondary" x="-90%" y="-65%" width="180%" height="10%" fill="lightgray" />
+      </svg>
+      
+      <!-- GLASSES -->
+      
+      <svg class="glasses glasses-round">
+        <circle cx="-65%" cy="-15%" r="35%" fill="lightskyblue" opacity="0.45" />
+        <circle cx="65%" cy="-15%" r="35%" fill="lightskyblue" opacity="0.45" />
+        <arc x="-100%" y="-50%" width="70%" height="70%" fill="black" arc-width="6%" start-angle="0" sweep-angle="360" />
+        <arc x="30%" y="-50%" width="70%" height="70%" fill="black" arc-width="6%" start-angle="0" sweep-angle="360" />
+        <line x1="-30%" y1="-20%" x2="30%" y2="-20%" fill="black" stroke-width="6%" />
+      </svg>
+      
+      <svg class="glasses glasses-round-sun">
+        <circle cx="-65%" cy="-15%" r="35%" fill="black" opacity="0.65" />
+        <circle cx="65%" cy="-15%" r="35%" fill="black" opacity="0.65" />
+        <arc x="-100%" y="-50%" width="70%" height="70%" fill="black" arc-width="6%" start-angle="0" sweep-angle="360" />
+        <arc x="30%" y="-50%" width="70%" height="70%" fill="black" arc-width="6%" start-angle="0" sweep-angle="360" />
+        <line x1="-30%" y1="-20%" x2="30%" y2="-20%" fill="black" stroke-width="6%" />
+      </svg>
+      
+      <svg class="glasses glasses-square">
+        <rect x="-100%" y="-50%" width="70%" height="70%" fill="lightskyblue" opacity="0.45" />
+        <rect x="30%" y="-50%" width="70%" height="70%" fill="lightskyblue" opacity="0.45" />
+        <line x1="-30%" y1="-20%" x2="30%" y2="-20%" fill="black" stroke-width="6%" />
+        
+        <line x1="-100%" y1="-50%" x2="-30%" y2="-50%" fill="black" stroke-width="6%" />
+        <line x1="-100%" y1="-50%" x2="-100%" y2="20%" fill="black" stroke-width="6%" />
+        <line x1="-100%" y1="20%" x2="-30%" y2="20%" fill="black" stroke-width="6%" />
+        <line x1="-30%" y1="-50%" x2="-30%" y2="20%" fill="black" stroke-width="6%" />
+        
+        <line x1="30%" y1="-50%" x2="100%" y2="-50%" fill="black" stroke-width="6%" />
+        <line x1="30%" y1="-50%" x2="30%" y2="20%" fill="black" stroke-width="6%" />
+        <line x1="30%" y1="20%" x2="100%" y2="20%" fill="black" stroke-width="6%" />
+        <line x1="100%" y1="-50%" x2="100%" y2="20%" fill="black" stroke-width="6%" />
+      </svg>
+      
+      <svg class="glasses glasses-square-sun">
+        <rect x="-100%" y="-50%" width="70%" height="70%" fill="black" opacity="0.65" />
+        <rect x="30%" y="-50%" width="70%" height="70%" fill="black" opacity="0.65" />
+        <line x1="-30%" y1="-20%" x2="30%" y2="-20%" fill="black" stroke-width="6%" />
+        
+        <line x1="-100%" y1="-50%" x2="-30%" y2="-50%" fill="black" stroke-width="6%" />
+        <line x1="-100%" y1="-50%" x2="-100%" y2="20%" fill="black" stroke-width="6%" />
+        <line x1="-100%" y1="20%" x2="-30%" y2="20%" fill="black" stroke-width="6%" />
+        <line x1="-30%" y1="-50%" x2="-30%" y2="20%" fill="black" stroke-width="6%" />
+        
+        <line x1="30%" y1="-50%" x2="100%" y2="-50%" fill="black" stroke-width="6%" />
+        <line x1="30%" y1="-50%" x2="30%" y2="20%" fill="black" stroke-width="6%" />
+        <line x1="30%" y1="20%" x2="100%" y2="20%" fill="black" stroke-width="6%" />
+        <line x1="100%" y1="-50%" x2="100%" y2="20%" fill="black" stroke-width="6%" />
+      </svg>
+      
+      <svg class="glasses glasses-rectangle">
+        <rect x="-100%" y="-45%" width="70%" height="35%" fill="lightskyblue" opacity="0.45" />
+        <rect x="30%" y="-45%" width="70%" height="35%" fill="lightskyblue" opacity="0.45" />
+        <line x1="-30%" y1="-25%" x2="30%" y2="-25%" fill="black" stroke-width="6%" />
+        
+        <line x1="-100%" y1="-45%" x2="-30%" y2="-45%" fill="black" stroke-width="6%" />
+        <line x1="-100%" y1="-45%" x2="-100%" y2="-10%" fill="black" stroke-width="6%" />
+        <line x1="-100%" y1="-10%" x2="-30%" y2="-10%" fill="black" stroke-width="6%" />
+        <line x1="-30%" y1="-45%" x2="-30%" y2="-10%" fill="black" stroke-width="6%" />
+        
+        <line x1="30%" y1="-45%" x2="100%" y2="-45%" fill="black" stroke-width="6%" />
+        <line x1="30%" y1="-45%" x2="30%" y2="-10%" fill="black" stroke-width="6%" />
+        <line x1="30%" y1="-10%" x2="100%" y2="-10%" fill="black" stroke-width="6%" />
+        <line x1="100%" y1="-45%" x2="100%" y2="-10%" fill="black" stroke-width="6%" />
+      </svg>
+      
+      <svg class="glasses glasses-rectangle-sun">
+        <rect x="-100%" y="-45%" width="70%" height="35%" fill="black" opacity="0.65" />
+        <rect x="30%" y="-45%" width="70%" height="35%" fill="black" opacity="0.65" />
+        <line x1="-30%" y1="-25%" x2="30%" y2="-25%" fill="black" stroke-width="6%" />
+        
+        <line x1="-100%" y1="-45%" x2="-30%" y2="-45%" fill="black" stroke-width="6%" />
+        <line x1="-100%" y1="-45%" x2="-100%" y2="-10%" fill="black" stroke-width="6%" />
+        <line x1="-100%" y1="-10%" x2="-30%" y2="-10%" fill="black" stroke-width="6%" />
+        <line x1="-30%" y1="-45%" x2="-30%" y2="-10%" fill="black" stroke-width="6%" />
+        
+        <line x1="30%" y1="-45%" x2="100%" y2="-45%" fill="black" stroke-width="6%" />
+        <line x1="30%" y1="-45%" x2="30%" y2="-10%" fill="black" stroke-width="6%" />
+        <line x1="30%" y1="-10%" x2="100%" y2="-10%" fill="black" stroke-width="6%" />
+        <line x1="100%" y1="-45%" x2="100%" y2="-10%" fill="black" stroke-width="6%" />
+      </svg>
+    </symbol>
+    
+    <symbol id="template-icon-heart">
+      <svg width="30" height="30">
+        <arc width="17" height="15" fill="red" arc-width="3" start-angle="225" sweep-angle="225" />
+        <arc x="13" width="17" height="15" fill="red" arc-width="3" start-angle="270" sweep-angle="225" />
+        <line x1="3" y1="12" x2="15" y2="25" fill="red" stroke-width="3" />
+        <line x1="26" y1="12" x2="15" y2="25" fill="red" stroke-width="3" />
+      </svg>
+    </symbol>
+    
+    <symbol id="template-icon-steps">
+      <svg width="30" height="30" y="66%">
+        <g transform="rotate(315)">
+          <arc width="16" height="16" fill="fb-extra-dark-gray" arc-width="3" start-angle="180" sweep-angle="180" />
+          <arc x="25" y="-2" width="20" height="20" fill="fb-extra-dark-gray" arc-width="3" start-angle="0" sweep-angle="180" />
+          <line x1="7" y1="1" x2="34" y2="-1" fill="fb-extra-dark-gray" stroke-width="3" />
+          <line x1="7" y1="14" x2="34" y2="16" fill="fb-extra-dark-gray" stroke-width="3" />
+          <line x1="15" y1="3" x2="15" y2="12" fill="fb-extra-dark-gray" stroke-width="3" />
+          <line x1="20" y1="1" x2="20" y2="12" fill="fb-extra-dark-gray" stroke-width="3" />
+        </g>
+      </svg>
+    </symbol>
+  </defs>
+</svg>

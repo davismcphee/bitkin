@@ -1,0 +1,42 @@
+#time-display {
+  font-size: 40;
+  font-family: System-Light;
+  text-length: 32;
+  x: 12%;
+  y: 60;
+  fill: white;
+}
+
+#date-display {
+  font-size: 24;
+  font-family: System-Light;
+  text-length: 32;
+  x: 12%;
+  y: 85;
+  fill: white;
+}
+
+.text-display {
+  font-size: 30;
+  font-family: System-Light;
+  fill: white;
+}
+
+.toggle-container {
+  width: "50%";
+  height: "30";
+  x: "43%";
+  y: "85%";
+  pointer-events: "all";
+}
+
+.toggle-icon {
+  width: 30;
+  height: 30;
+  fill: fb-extra-dark-gray;
+}
+
+.toggle-text {
+  x: 40;
+  y: 28;
+}

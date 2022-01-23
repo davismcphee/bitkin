@@ -1,0 +1,211 @@
+<svg>
+  <!-- CLOCK BACKGROUND -->
+  <rect id="background" width="100%" height="100%" />
+  
+  <!-- DEFAULT ANIMATION -->
+  <svg id="state-default" x="50%" y="50%" width="80" height="80">
+    <section y="100%">
+      <g transform="scale(0.85,0.3)">
+        <use href="#template-shadow" />
+        
+        <animateTransform attributeType="scale" from="0.85,0.3" to="0.9,0.3" easing="ease-out"  begin="load" dur="1" repeatDur="2" repeatCount="indefinite" />
+        <animateTransform attributeType="scale" from="0.9,0.3" to="0.85,0.3" easing="ease-in" begin="load+1" dur="1" repeatDur="2" repeatCount="indefinite" />
+      </g>
+    </section>
+    
+    <g>
+      <use href="#template-body" />
+
+      <animateTransform attributeType="scale" from="1,1" to="1.05,0.95" easing="ease-out"  begin="load" dur="1" repeatDur="2" repeatCount="indefinite" />
+      <animateTransform attributeType="scale" from="1.05,0.95" to="1,1" easing="ease-in" begin="load+1" dur="1" repeatDur="2" repeatCount="indefinite" />
+      <animateTransform attributeType="translate" from="0,0" to="0,5%" easing="ease-out" begin="load" dur="1" repeatDur="2" repeatCount="indefinite" />
+      <animateTransform attributeType="translate" from="0,5%" to="0,0" easing="ease-in" begin="load+1" dur="1" repeatDur="2" repeatCount="indefinite" />
+    </g>
+
+    <g transform="scale(1,0.55)">
+      <use href="#template-blush" />
+
+      <animateTransform attributeType="translate" from="0,-3%" to="0,3%" begin="load" dur="1" repeatDur="2" repeatCount="indefinite" />
+      <animateTransform attributeType="translate" from="0,3%" to="0,-3%" begin="load+1" dur="1" repeatDur="2" repeatCount="indefinite" />
+    </g>
+
+    <g>
+      <use href="#template-face" />
+
+      <animateTransform attributeType="translate" from="0,-5%" to="0,5%" easing="ease-out" begin="load" dur="1" repeatDur="2" repeatCount="indefinite" />
+      <animateTransform attributeType="translate" from="0,5%" to="0,-5%" easing="ease-out" begin="load+1" dur="1" repeatDur="2" repeatCount="indefinite" />
+    </g>
+  </svg>
+  
+  <!-- SHAKE ANIMATION -->
+  <svg id="state-shake" class="state" x="50%" y="50%" width="80" height="80">
+    <section y="100%">
+      <g transform="scale(0.85,0.3)">
+        <use href="#template-shadow" />
+      </g>
+    </section>
+
+    <g>
+      <use href="#template-body" />
+
+      <g transform="scale(1,0.55)">
+        <use href="#template-blush" />
+      </g>
+
+      <use href="#template-face" />
+
+      <animateTransform attributeType="rotate" from="0" to="5" begin="load" dur="0.05" repeatDur="0.2" repeatCount="indefinite" />
+      <animateTransform attributeType="rotate" from="5" to="0" begin="load+0.05" dur="0.05" repeatDur="0.2" repeatCount="indefinite" />
+      <animateTransform attributeType="rotate" from="0" to="-5" begin="load+0.1" dur="0.05" repeatDur="0.2" repeatCount="indefinite" />
+      <animateTransform attributeType="rotate" from="-5" to="0" begin="load+0.15" dur="0.05" repeatDur="0.2" repeatCount="indefinite" />
+    </g>
+  </svg>
+  
+  <!-- JUMP ANIMATION -->
+  <svg id="state-jump" class="state" x="50%" y="50%" width="80" height="80">
+    <section y="100%">
+      <g transform="scale(0.85,0.3)">
+        <use href="#template-shadow" />
+        
+        <animateTransform attributeType="scale" from="0.85,0.3" to="1,0.3" easing="ease-out"  begin="load" dur="0.4" repeatDur="1" repeatCount="indefinite" />
+        <animateTransform attributeType="scale" from="1,0.3" to="0.3,0.1" easing="ease-out" begin="load+0.4" dur="0.2" repeatDur="1" repeatCount="indefinite" />
+        <animateTransform attributeType="scale" from="0.3,0.1" to="0.85,0.3" easing="ease-out" begin="load+0.6" dur="0.4" repeatDur="1" repeatCount="indefinite" />
+      </g>
+    </section>
+
+    <g>
+      <use href="#template-body" />
+
+      <g transform="scale(1,0.55)">
+        <use href="#template-blush" />
+      </g>
+
+      <use href="#template-face" />
+
+      <animateTransform attributeType="scale" from="1,1" to="1,0.4" easing="ease-out" begin="load" dur="0.4" repeatDur="1" repeatCount="indefinite" />
+      <animateTransform attributeType="scale" from="1,0.4" to="1,2" easing="ease-out" begin="load+0.4" dur="0.2" repeatDur="1" repeatCount="indefinite" />
+      <animateTransform attributeType="scale" from="1,2" to="1,0.6" easing="ease-in" begin="load+0.6" dur="0.3" repeatDur="1" repeatCount="indefinite" />
+      <animateTransform attributeType="scale" from="1,0.6" to="1,1" easing="ease-out" begin="load+0.9" dur="0.1" repeatDur="1" repeatCount="indefinite" />
+      <animateTransform attributeType="translate" from="0,0" to="0,60%" easing="ease-out" begin="load" dur="0.4" repeatDur="1" repeatCount="indefinite" />
+      <animateTransform attributeType="translate" from="0,50%" to="0,-500%" easing="ease-out" begin="load+0.4" dur="0.2" repeatDur="1" repeatCount="indefinite" />
+      <animateTransform attributeType="translate" from="0,-500%" to="0,40%" easing="ease-in" begin="load+0.6" dur="0.3" repeatDur="1" repeatCount="indefinite" />
+      <animateTransform attributeType="translate" from="0,40%" to="0,0" easing="ease-out" begin="load+0.9" dur="0.1" repeatDur="1" repeatCount="indefinite" />
+    </g>
+  </svg>
+  
+  <!-- ROLL ANIMATION -->
+  <svg id="state-roll" class="state" x="50%" y="50%" width="80" height="80">
+    <g>
+      <section y="100%">
+        <g transform="scale(0.85,0.3)">
+          <use href="#template-shadow" />
+        </g>
+      </section>
+
+      <g>
+        <use href="#template-body" />
+
+        <g transform="scale(1,0.55)">
+          <use href="#template-blush" />
+        </g>
+
+        <use href="#template-face" />
+
+        <animateTransform attributeType="rotate" from="0" to="360" easing="ease-in-out" begin="load" dur="1" repeatDur="1" repeatCount="indefinite" />
+      </g>
+
+      <animateTransform attributeType="translate" from="0,0" to="300,0" easing="ease-in" begin="load" dur="0.5" repeatDur="1" repeatCount="indefinite" />
+      <animateTransform attributeType="translate" from="300,0" to="-300,0" begin="load+0.5" dur="0" repeatDur="1" repeatCount="indefinite" />
+      <animateTransform attributeType="translate" from="-300,0" to="0,0" easing="ease-out" begin="load+0.5" dur="0.5" repeatDur="1" repeatCount="indefinite" />
+    </g>
+  </svg>
+  
+  <!-- CLOCK DISPLAY -->
+  <text id="time-display" />
+  <text id="date-display" />
+  
+  <!-- BATTERY DISPLAY -->
+  <rect x="88%-18" y="10%-4" width="12" height="4" fill="fb-extra-dark-gray" />
+  <rect x="88%-24" y="10%" width="24" height="40" fill="fb-extra-dark-gray" />
+  <svg x="88%-4" y="10%+36">
+    <g transform="rotate(180)">
+      <rect id="animate-battery" width="16" height="32" fill="fb-green" />
+    </g>
+  </svg>
+  
+  <!-- HEART RATE DISPLAY -->
+  <svg width="30%" height="30" x="12%" y="85%">
+    <g id="animate-heart-rate-low">
+      <use href="#template-icon-heart" />
+      
+      <animateTransform attributeType="scale" from="1,1" to="1.2,1.2" begin="load" dur="0" repeatDur="1" repeatCount="indefinite" />
+      <animateTransform attributeType="scale" from="1.2,1.2" to="1,1" easing="ease-out" begin="load" dur="1" repeatDur="1" repeatCount="indefinite" />
+      <animateTransform attributeType="translate" from="0,0" to="-3,-6" begin="load" dur="0" repeatDur="1" repeatCount="indefinite" />
+      <animateTransform attributeType="translate" from="-3,-6" to="0,0" easing="ease-out" begin="load" dur="1" repeatDur="1" repeatCount="indefinite" />
+    </g>
+    
+    <g id="animate-heart-rate-medium">
+      <use href="#template-icon-heart" />
+      
+      <animateTransform attributeType="scale" from="1,1" to="1.2,1.2" begin="load" dur="0" repeatDur="0.67" repeatCount="indefinite" />
+      <animateTransform attributeType="scale" from="1.2,1.2" to="1,1" easing="ease-out" begin="load" dur="0.67" repeatDur="0.67" repeatCount="indefinite" />
+      <animateTransform attributeType="translate" from="0,0" to="-3,-6" begin="load" dur="0" repeatDur="0.67" repeatCount="indefinite" />
+      <animateTransform attributeType="translate" from="-3,-6" to="0,0" easing="ease-out" begin="load" dur="0.67" repeatDur="0.67" repeatCount="indefinite" />
+    </g>
+    
+    <g id="animate-heart-rate-high">
+      <use href="#template-icon-heart" />
+      
+      <animateTransform attributeType="scale" from="1,1" to="1.2,1.2" begin="load" dur="0" repeatDur="0.5" repeatCount="indefinite" />
+      <animateTransform attributeType="scale" from="1.2,1.2" to="1,1" easing="ease-out" begin="load" dur="0.5" repeatDur="0.5" repeatCount="indefinite" />
+      <animateTransform attributeType="translate" from="0,0" to="-3,-6" begin="load" dur="0" repeatDur="0.5" repeatCount="indefinite" />
+      <animateTransform attributeType="translate" from="-3,-6" to="0,0" easing="ease-out" begin="load" dur="0.5" repeatDur="0.5" repeatCount="indefinite" />
+    </g>
+    
+    <g id="animate-heart-rate-max">
+      <use href="#template-icon-heart" />
+      
+      <animateTransform attributeType="scale" from="1,1" to="1.2,1.2" begin="load" dur="0" repeatDur="0.4" repeatCount="indefinite" />
+      <animateTransform attributeType="scale" from="1.2,1.2" to="1,1" easing="ease-out" begin="load" dur="0.4" repeatDur="0.4" repeatCount="indefinite" />
+      <animateTransform attributeType="translate" from="0,0" to="-3,-6" begin="load" dur="0" repeatDur="0.4" repeatCount="indefinite" />
+      <animateTransform attributeType="translate" from="-3,-6" to="0,0" easing="ease-out" begin="load" dur="0.4" repeatDur="0.4" repeatCount="indefinite" />
+    </g>
+
+    <text id="heart-rate-display" class="text-display" x="38" y="28">---</text>
+  </svg>
+  
+  <!-- STEPS DISPLAY -->
+  <svg id="steps-container" class="toggle-container">
+    <image href="images/steps.png" class="toggle-icon" />
+
+    <text id="steps-display" class="text-display toggle-text">99,999</text>
+  </svg>
+  
+  <!-- CALORIES DISPLAY -->
+  <svg id="calories-container" class="toggle-container">
+    <image href="images/calories.png" class="toggle-icon" />
+
+    <text id="calories-display" class="text-display toggle-text">99,999</text>
+  </svg>
+  
+  <!-- DISTANCE DISPLAY -->
+  <svg id="distance-container" class="toggle-container">
+    <image href="images/distance.png" class="toggle-icon" />
+
+    <text id="distance-display" class="text-display toggle-text">99,999</text>
+  </svg>
+  
+  <!-- ACTIVE MINUTES DISPLAY -->
+  <svg id="active-minutes-container" class="toggle-container">
+    <image href="images/active-minutes.png" class="toggle-icon" />
+
+    <text id="active-minutes-display" class="text-display toggle-text">99,999</text>
+  </svg>
+  
+  <!-- FLOORS DISPLAY -->
+  <svg id="floors-container" class="toggle-container">
+    <image href="images/floors.png" class="toggle-icon" />
+
+    <text id="floors-display" class="text-display toggle-text">99,999</text>
+  </svg>
+</svg>
